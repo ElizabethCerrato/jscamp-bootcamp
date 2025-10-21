@@ -1,1 +1,193 @@
-<!-- Aquí el contenido de tu página empleos.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>DevJobs</title>
+
+  </head>
+  <body>
+    <header>
+      <div class="left-elements-header">
+      <h1>
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        DevJobs
+      </h1>
+      <nav>
+        <ul>
+          <li><a id="inicio" href="index.html">Inicio</a></li>
+          <li><a id="empleos" href="">Empleos</a></li>
+          <li><a id="empresas" href="">Empresas</a></li>
+          <li><a id="salarios" href="">Salarios</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="user-actions">
+        <a href="" class="subir-cv-btn">Subir CV</a>
+        <img src="./img/profile.jpg" alt="Mi foto" />
+      </div>
+    </header>
+
+    <main>
+      <section id="sin-altura">
+        <div class="container-header">
+          <h1>Encuentra tu próximo trabajo</h1>
+          <h2>Explora miles de oportunidades en el sector tecnológico.</h2>
+        </div>
+        <form role="search" class="formulario-empleos">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+          <input
+            type="text"
+            placeholder="Buscar trabajos, empresas o habilidades"
+          />
+        </form>
+        <div class="filters">
+          <select name="tech" id="tech">
+            <option value="">Tecnología</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+            <option value="typescript">TypeScript</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+          </select>
+          <select name="ubicacion" id="ubicacion">
+            <option value="">Ubicación</option>
+            <option value="remoto">Remoto</option>
+            <option value="ciudad-de-mexico">Ciudad de México</option>
+            <option value="guadalajara">Guadalajara</option>
+            <option value="mallorca">Mallorca</option>
+            <option value="barcelona">Barcelona</option>
+          </select>
+          <select name="contrato" id="contrato">
+            <option value="">Tipo de contrato</option>
+            <option value="indefinido">Indefinido</option>
+            <option value="determinado">Duración determinada</option>
+          </select>
+          <select name="experiencia" id="experiencia">
+            <option value="">Nivel de experiencia</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="lead">Lead</option>
+          </select>
+        </div>
+      </section>
+      <section>
+        <h2>Resultados de búsqueda</h2>
+        <div class="jobs-listing">
+          <article class="card">
+            <div class="job-info">
+              <div class="job-header">
+                <h3>Ingeniero de Software</h3>
+                <button class="aplicar" type="button">Aplicar</button>
+              </div>
+              <small>Tech Solution Inc | Remoto</small>
+            </div>
+
+            <div class="job-offer">
+              <p>
+                Buscamos un ingeniero de software con experiencia en desarrollo
+                web y conocimientos en JavaScript, React, Node.js. El candidato
+                ideal debe ser capaz de trabajar en equipo y tener buenas
+                habilidades de comunicación.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="job-info">
+              <div class="job-header">
+                <h3>Analista de Datos</h3>
+                <button class="aplicar" type="button">Aplicar</button>
+              </div>
+              <small>Data Driven Co | Ciudad de México</small>
+            </div>
+            <div class="job-offer">
+              <p>
+                Estamos buscando un analista de datos con experiencia en el
+                manejo de grandes conjuntos de datos y herramientas de
+                visualización. Se requiere conocimiento en SQL, Python y R.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="job-info">
+              <div class="job-header">
+                <h3>Desarrollador de Aplicaciones Móviles</h3>
+                <button class="aplicar" type="button">Aplicar</button>
+              </div>
+              <small>Mobile Apps Ltd | Guadalajara</small>
+            </div>
+            <div class="job-offer">
+              <p>
+                Buscamos un desarrollador de aplicaciones móviles con
+                experiencia en iOS y/o Android. El candidato debe tener
+                conocimientos en Swift, Kotlin y el desarrollo de interfaces de
+                usuario.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="job-info">
+              <div class="job-header">
+                <h3>Ingeniero de DevOps</h3>
+                <button class="aplicar" type="button">Aplicar</button>
+              </div>
+              <small>Cloud Services SA | Remoto</small>
+            </div>
+            <div class="job-offer">
+              <p>
+                Estamos buscando un ingeniero de DevOps con experiencia en la
+                gestión de infraestructuras en la nube, automatización de
+                procesos y herramientas de integración continua. Se requiere
+                conocimientosde AWS, Azure o GCP.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Paginación de resultados">
+          <a href="">&lt;</a>
+          <a class="is-active" href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+          <a href="">&gt;</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+  </body>
+</html>
