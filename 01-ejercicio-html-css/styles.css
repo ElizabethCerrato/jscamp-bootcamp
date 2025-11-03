@@ -304,6 +304,7 @@ article {
   align-items: center;
   gap: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .user-actions {
@@ -436,7 +437,11 @@ main > section:nth-child(2) {
   margin: 0 auto;
 }
 
-.card:nth-last-child(1) {
+.jobs-listing ul {
+  list-style: none;
+}
+
+.jobs-listing ul li:nth-last-child(1) {
   border-bottom: 0;
 }
 
