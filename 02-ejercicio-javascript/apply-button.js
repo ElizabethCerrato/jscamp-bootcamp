@@ -1,4 +1,4 @@
-const elementoUl = document.querySelector(".jobs-listing");
+const elementoUl = document.querySelector(".jobs-listings");
 
 elementoUl.addEventListener("click", (e) => {
   const botonAplicar = e.target.closest(".button-apply-job");
